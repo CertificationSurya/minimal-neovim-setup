@@ -57,7 +57,7 @@ return {
 					-- python
 					"pyright",
 					-- C#
-					"csharp_ls",
+					"omnisharp",
 				},
 
 				handlers = {
@@ -108,6 +108,13 @@ return {
 						})
 					end,
 
+					-- c# handler
+					["omnisharp"] = function()
+						require("lspconfig").omnisharp.setup({
+							capabilities = capabilities,
+						})
+					end,
+
 				}
 
 
@@ -123,7 +130,7 @@ return {
 				mapping = cmp.mapping.preset.insert({
 					['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
 					['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-					['<C-y>'] = cmp.mapping.confirm({ select = true }),
+					['<M-Space>'] = cmp.mapping.confirm({ select = true }),
 					["<C-Space>"] = cmp.mapping.complete(),
 				}),
 				sources = cmp.config.sources({
