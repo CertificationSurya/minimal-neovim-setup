@@ -20,7 +20,7 @@ vim.opt.swapfile = true
 
 -- for undo tree
 vim.opt.undofile = true
---vim.opt.undodir = os.getenv("Home") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undodir =  vim.fn.expand("~/.vim/undodir")
 vim.opt.backup = false
 
@@ -38,8 +38,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "115"
-
-
 
 -- auto suggest height
 vim.opt.pumheight = 8

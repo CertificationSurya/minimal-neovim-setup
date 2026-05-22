@@ -3,12 +3,19 @@ vim.g.mapleader = " "
 -- explorer
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
+-- write and write all
+vim.keymap.set("n", "<leader>w", "<cmd>w<CR>")
+vim.keymap.set("n", "<leader>W", "<cmd>wa<CR>")
+
 -- moving line up down (visual mode)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- down
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- up
 
 -- open diagnostic 
 vim.keymap.set("n", "<leader>q", vim.diagnostic.open_float);
+
+-- open message box
+vim.keymap.set("n", "<leader>m", "<cmd>messages<CR>")
 
 -- half page movement
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

@@ -1,4 +1,0 @@
-following plugin are necessary to boost the efficiency. use only when you have basic familarity with neovim
-1. undo tree (refactoring, making change in branch (undo branch))
-2. fugitive by tpope (git vitualizer) 
-
