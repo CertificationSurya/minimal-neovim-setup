@@ -38,3 +38,8 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "115"
+
+
+
+-- auto suggest height
+vim.opt.pumheight = 8

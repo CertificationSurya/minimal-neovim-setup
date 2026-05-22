@@ -58,6 +58,8 @@ return {
 					"pyright",
 					-- C#
 					"omnisharp",
+                    -- c and cpp
+                    "clangd"
 				},
 
 				handlers = {
