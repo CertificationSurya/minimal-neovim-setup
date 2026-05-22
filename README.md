@@ -1,5 +1,3 @@
-
-````md
 # Neovim Config
 
 Personal Neovim configuration focused on:
@@ -8,22 +6,6 @@ Personal Neovim configuration focused on:
 - Git integration
 - Fast file navigation
 - Minimal but practical workflow
-
----
-
-# Structure
-
-```text
-.
-├── init.lua
-├── telescope.lua
-├── theme.lua
-├── treesitter.lua
-├── fugitive.lua
-├── harpoon.lua
-├── undotree.lua
-└── lsp.lua
-````
 
 ---
 
@@ -145,6 +127,7 @@ Mainly configured for:
 * Python
 * Lua
 * HTML/CSS/Tailwind
+* clangd
 
 ```
 ```
